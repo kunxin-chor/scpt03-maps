@@ -1,0 +1,4 @@
+#myMap {
+    /* we must have a height for the div or else the map won't displays */
+    height:90vh;
+}
