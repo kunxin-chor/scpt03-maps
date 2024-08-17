@@ -1,0 +1,9 @@
+#map {
+    /* 
+    The leaflet map is a canvas object.
+    Canvas allows you to draw shapes and circles and lines etc.
+    By default canvas does not have a height even if you draw
+    stuff inside, so that's why you must give it explict height.
+    */
+    height: 90vh;
+}
