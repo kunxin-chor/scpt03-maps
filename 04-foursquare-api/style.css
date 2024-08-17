@@ -7,3 +7,24 @@
     */
     height: 90vh;
 }
+
+#map-container {
+    position: relative;
+}
+
+#search-container {
+    position: absolute;
+    z-index: 500;
+    top: 10px;
+    left: 50px;
+    background-color: rgb(255 255 255 / 44%);
+    line-height: 24px;
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+#search-results {
+
+
+}

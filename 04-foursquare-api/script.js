@@ -1,7 +1,6 @@
 const FOURSQUARE_API = "https://api.foursquare.com/v3/places";
 
 document.addEventListener("DOMContentLoaded", async function () {
-  
   // create the map
   const map = createMap();
 
@@ -22,7 +21,11 @@ document.addEventListener("DOMContentLoaded", async function () {
       // remove all existing markers from the search results layer
       searchResultLayer.clearLayers();
 
+      // add the result to the search results div
+      const resultElement = document.querySelector("#search-results");
+      resultElement.innerHTML = "";
+
       // add the search results as marker
-      addSearchResultToMap(data, searchResultLayer);
+      addSearchResultToMap(data, searchResultLayer, resultElement, map);
     });
 });

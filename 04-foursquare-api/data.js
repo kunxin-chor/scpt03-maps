@@ -1,4 +1,4 @@
-async function search(searchQuery, lat, lng, radius = 1000) {
+async function search(searchQuery, lat, lng, radius = 2500) {
     const response = await axios.get(FOURSQUARE_API + "/search", {
       headers: {
         Accept: "application/json",
@@ -8,6 +8,7 @@ async function search(searchQuery, lat, lng, radius = 1000) {
         query: searchQuery,
         ll: `${lat},${lng}`,
         radius: radius,
+        limit: 50
       },
     });
     return response.data;

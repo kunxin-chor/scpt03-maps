@@ -14,13 +14,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
-    <div>
-      <label>Search:</label>
-      <input type="text" id="searchTerms"/>
-      <button id="searchBtn">Search</button>
+    <div id="map-container">
+      <div id="search-container">
+        <input type="text" id="searchTerms" />
+        <button id="searchBtn">Search</button>
+        <div id="search-results"></div>
+      </div>
+      <div id="map"></div>
     </div>
-    <div id="map"></div>
 
     <!-- Leaflet -->
     <script
